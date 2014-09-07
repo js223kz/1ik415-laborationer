@@ -3,4 +3,4 @@
 
 Webbteknisk introduktion
 
-Här ligger alla mina kursfiler. 
+Här ligger alla mina filer som rör kursen webbteknik
