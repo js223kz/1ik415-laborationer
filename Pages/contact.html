@@ -2,25 +2,62 @@
 <html lang="sv">
     <head>
       <meta charset="utf-8" />  
-      <title>Kontakt - Johanna Szepanski</title>
+      <title>Kontakt</title>
     </head> 
     
     <body>
-        <div id="header">
+        <header>
             <h1>Kontakt</h1>
-            <h3>Kontakta gärna mig!</h3>
-        </div>
+            
+        </header> 
         
-        <div id="navigation">
+        <nav>
             <ul>
                 <li><a href="../index.html">Blogg</a></li>
                 <li><a href="presentation.html">Presentation</a></li>
                 <li><a href="laborations.html">Laborationer</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
-        </div>
     
         <div id="content">
+            <div id="contact">
+                <h3>Kontakta gärna mig!</h3>
+                
+                <form method= "POST" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php">
+                
+                <fieldset>
+                    <legend>Kontaktinformation</legend>
+                    
+                        <label for="firstname">Förnamn</label>
+                        <input type="text" id="firstname" name="firstname"/>
+                        
+                        <label for="lastname">Efternamn</label>
+                        <input type="text" id="lastname" name="lastname"/>
+                    
+                        <p>Hur vill du att jag kontaktar dig?</p>
+                        <input type="radio" value="telefon" name="contactoption" checked/>Telefon
+                        <input type="radio" value="telefon" name="contactoption"/>E-post
+                        
+                        <label for="contactinfo">Telefon/e-post</label>
+                        <input type="text" id="contactinfo" name="contactinfo"/>
+                        
+                        <p>När vill du helst att jag kontaktar dig?</p>
+                        <select name="when" id="when">
+                            <option checked>På morgonen</option>
+                            <option>Efter lunch</option>
+                            <option>På kvällen</option>
+                        </select>
+                </fieldset>
+                 
+                
+                <fieldset>
+                    <legend>Mitt ärende</legend>
+                    <textarea cols="30" rows="5" value="whatiwant"></textarea>
+                </fieldset>
+                
+                <button type="submit">Skicka</button>
+                </form>  
+            </div>
         </div> 
 
     </body>
