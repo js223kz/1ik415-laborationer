@@ -48,6 +48,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*same for all pages*/
 #wrapper{
     width: 960px;
     background-color: #ffffff;
@@ -61,11 +62,32 @@ p{
 	margin-bottom: 10px;
 }
 
+h1{
+	font-size: 2em;
+	font-family: Verdana, Arial, sans-serif;
+	font-variant: small-caps;
+	color: #000000;
+	
+}
+h4{
+	font-size: 0.9em;
+	line-height: 1.5em;
+	font-family: Verdana, Arial, sans-serif;
+	font-variant: small-caps;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: #ffffff;
+	
+}
+/*same for all pages included in the header*/
 header{
 	width: 100%;
 	height: 200px;
     border-bottom: 10px solid;
 	border-color: #424274;
+	display: block;
+
 }
 nav{
 	margin-top:0;
@@ -85,19 +107,35 @@ nav ul li a{
 	font-family: Verdana, Arial, Sans Serif;
 	font-variant: small-caps;
 	text-decoration: none;
-	margin-left: 10px;
-	padding-right: 10px;
+	padding: 0 10px;
 	color: #ffffff;
 	border-right: 1px solid #ffffff;
 }
-#logo{
-	margin: auto auto;
-	display: block;
+
+
+/*links*/
+.active{
+	color: #000000;
+}
+header a:hover {
+	text-decoration: underline;
+}
+.externallink:link {text-decoration: underline; }
+.externallink:visited {color: purple; text-decoration: underline; }
+.externallink:hover {background-color: silver; text-decoration: underline; }
+.externallink:active {color: orange; text-decoration: none; }
+
+
+
+/*headerheadlines <div id="indexheadline" alt="Johannas logotyp" width="700px" height="120px" </div>*/
+#indexHeader{
+	background-image: url(CSS/Pics/bara_johannas.png); background-repeat: no-repeat; background-position: center center;;
+	
+
 }
 main{
-	background-color: #ffffff;
 	width: 100%;
-	margin-top: 0px;
+	height: auto;
 }
 section{
 	float: left;
@@ -112,17 +150,7 @@ article{
 	margin-bottom: 20px;
 	border-bottom: 10px solid #424274;
 }
-
-
-listofblogposts{
-	float: left;
-	width: 300px;
-	min-height: 200px;
-	background-color: #424274;
-	margin-top: 30px;
-	margin-left:10px; 
-}
-
+/*sidebar*/
 aside dl dt{
 	font-size: 0.9em;
 	line-height: 1.5em;
@@ -150,51 +178,7 @@ aside dl dd a{
 aside ul{
 	margin-top: 10px;
 }
-
-h1{
-	font-size: 2em;
-	font-family: Verdana, Arial, sans-serif;
-	font-variant: small-caps;
-	color: #000000;
-	
-}
-p.blogparagraph{
-	margin: 10px auto;
-}
-p.author{
-	margin: 10px auto;
-	font-size: 0.7em;
-	line-height: 1em;
-	font-family: Verdana, Arial, sans-serif;
-	font-style: italic;
-}
-#imagejohanna{
-	margin: 10px 10px;
-}
-
-#interests{
-	width: 300px;
-	margin-left: 10px;
-	margin-bottom: 10px;
-}
-
-h4{
-	font-size: 0.9em;
-	line-height: 1.5em;
-	font-family: Verdana, Arial, sans-serif;
-	font-variant: small-caps;
-	text-decoration: none;
-	margin-left: 10px;
-	margin-top: 10px;
-	color: #ffffff;
-	
-}
-
-#education h4{
-	margin-left: 10px;
-}
-
-ol li{
+aside ol li{
 	font-size: 0.7em;
 	line-height: 1.1em;
 	font-family: Verdana, Arial, sans-serif;
@@ -204,7 +188,7 @@ ol li{
 	color: #ffffff;
 	
 }
-ol li a{
+aside ol li a{
 	color: #ffffff;
 	
 }
@@ -224,7 +208,6 @@ aside ul li{
 }
 aside ul li a{
 	color: #ffffff;
-
 }
 
 aside{
@@ -237,6 +220,36 @@ aside{
 	margin-left:10px; 
 }
 
+/*blogposts*/
+p.blogparagraph{
+	margin: 10px auto;
+}
+p.author{
+	margin: 10px auto;
+	font-size: 0.7em;
+	line-height: 1em;
+	font-family: Verdana, Arial, sans-serif;
+	font-style: italic;
+}
+/*prestentation.html*/
+#imagejohanna{
+	margin: 10px 10px;
+}
+#presentation dt{
+	margin-left:0px;
+}
+#presentation dd{
+	margin-left:10px;
+}
+
+#interests{
+	width: 300px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+#education h4{
+	margin-left: 10px;
+}
 #aboutme{
 	float: left;
 	height: auto;
@@ -245,15 +258,8 @@ aside{
 	margin-top: 30px;
 	margin-left: 30px;
 }
-
-table{
-	border: 1px solid #000000;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 10px;
-}
+/*laboration.html*/
 #laboration1{
-	float: left;
 	height: auto;
 	width: 600px;
 	background-color:#ffffff;
@@ -277,12 +283,41 @@ section dl dd {
 	color: #000000;
 	
 }
-#resulttable{
+#sidebar{
+	height:auto;
+	width: 300px;
+	float: left;
+	margin-left: 0;
+}
+table {
+	padding: 20px 20px 20px 20px; 
 	margin-left: 10px;
 	margin-top: 20px;
-	float:left;
+	float: left;
 }
-
+thead tr th{
+	border: 1px solid #000000;
+	padding: 6px 6px 6px 6px;  
+}
+tfoot tr th{
+	border: 1px solid #000000;
+	padding: 6px 6px 6px 6px; 
+}
+tr{
+	border: 1px solid #000000;
+	padding: 6px 6px 6px 6px;  
+	font-size: 0.7em;
+	line-height: 1.1em;
+	font-family: Verdana, Arial, sans-serif;
+	color: #000000;
+}
+td{
+	border: 1px solid #000000;
+	padding: 6px 6px 6px 6px;  
+}
+article dl dd{
+	margin-bottom: 10px;
+}
 footer{
 	clear: both;
 	height: 50px;
