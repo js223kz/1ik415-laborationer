@@ -107,14 +107,14 @@ section{
 	margin-top: 30px;
 	margin-left: 30px;
 }
-article.blog{
+article{
 	width: 100%;
 	margin-bottom: 20px;
 	border-bottom: 10px solid #424274;
 }
 
 
-#listofblogposts{
+listofblogposts{
 	float: left;
 	width: 300px;
 	min-height: 200px;
@@ -123,7 +123,7 @@ article.blog{
 	margin-left:10px; 
 }
 
-dl dt{
+aside dl dt{
 	font-size: 0.9em;
 	line-height: 1.5em;
 	font-family: Verdana, Arial, sans-serif;
@@ -134,7 +134,7 @@ dl dt{
 	color: #ffffff;
 	
 }
-dl dd {
+aside dl dd {
 	font-size: 0.7em;
 	line-height: 1.1em;
 	font-family: Verdana, Arial, sans-serif;
@@ -144,14 +144,18 @@ dl dd {
 	color: #ffffff;
 	
 }
-#listofblogposts dl dd a{
+aside dl dd a{
 	color:#ffffff;
 }
+aside ul{
+	margin-top: 10px;
+}
 
-section h1{
+h1{
 	font-size: 2em;
 	font-family: Verdana, Arial, sans-serif;
 	font-variant: small-caps;
+	color: #000000;
 	
 }
 p.blogparagraph{
@@ -173,15 +177,7 @@ p.author{
 	margin-left: 10px;
 	margin-bottom: 10px;
 }
-#interests dt{
-	color: #ffffff;
-	margin-left: 0px;
-	
-}
-#interests dd {
-	color: #ffffff;
-	
-}
+
 h4{
 	font-size: 0.9em;
 	line-height: 1.5em;
@@ -193,9 +189,11 @@ h4{
 	color: #ffffff;
 	
 }
+
 #education h4{
 	margin-left: 10px;
 }
+
 ol li{
 	font-size: 0.7em;
 	line-height: 1.1em;
@@ -205,6 +203,14 @@ ol li{
 	margin-top: 10px;
 	color: #ffffff;
 	
+}
+ol li a{
+	color: #ffffff;
+	
+}
+aside ol{
+	margin-bottom: 10px;
+		
 }
 aside ul li{
 	font-size: 0.7em;
@@ -216,8 +222,12 @@ aside ul li{
 	color: #ffffff;
 
 }
+aside ul li a{
+	color: #ffffff;
 
-#presentation{
+}
+
+aside{
 	float: left;
 	width: 300px;
 	height: auto;
@@ -236,10 +246,47 @@ aside ul li{
 	margin-left: 30px;
 }
 
+table{
+	border: 1px solid #000000;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+#laboration1{
+	float: left;
+	height: auto;
+	width: 600px;
+	background-color:#ffffff;
+	margin-top: 30px;
+	margin-left: 30px;
+	
+}
+section dl dt{
+	font-size: 0.9em;
+	line-height: 1.5em;
+	font-family: Verdana, Arial, sans-serif;
+	margin-top: 10px;
+	color: #000000;
+	
+}
+section dl dd {
+	font-size: 0.7em;
+	line-height: 1.1em;
+	font-family: Verdana, Arial, sans-serif;
+	margin-top: 10px;
+	color: #000000;
+	
+}
+#resulttable{
+	margin-left: 10px;
+	margin-top: 20px;
+	float:left;
+}
+
 footer{
 	clear: both;
 	height: 50px;
 	width: 100%;
 	margin-bottom: 0px;
-	background-color: #455660;
+	background-color: #424274;
 }
