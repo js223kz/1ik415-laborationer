@@ -231,6 +231,15 @@ p.author{
 	font-family: Verdana, Arial, sans-serif;
 	font-style: italic;
 }
+/*blogimages left or right*/
+.left{
+	float: right;
+	margin: 10px;
+}
+.right{
+	float: left;
+	margin: 10px;
+}
 /*prestentation.html*/
 #imagejohanna{
 	margin: 10px 10px;
