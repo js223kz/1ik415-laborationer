@@ -4,67 +4,71 @@
 <head>
     <meta charset="utf-8" />
     <title>Blogg</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
 </head>
 
 <body>
+    <div id="wrapper">
     <header>
-        <h1>Johannas Webbteknik</h1>
-        <h3>Välkommen till min sida</h3>
-        <img src="Pics/logo.png" alt="Johannas logotyp" width="210" height="210"/>
-    </header>
-        
-    <nav>
+        <nav id="navbar">
         <ul>
-            <li><a href="index.html ">Blogg</a></li>
-            <li><a href="Pages/presentation.html ">Presentation</a></li>
-            <li><a href="Pages/laborations.html ">Laborationer</a></li>
-            <li><a href="Pages/contact.html ">Kontakt</a></li>
+            <li><a href="index.html ">blogg</a>
+            </li>
+            <li><a href="Pages/presentation.html">presentation</a>
+            </li>
+            <li><a href="Pages/laborations.html">laborationer</a>
+            </li>
+            <li><a href="Pages/contact.html">kontakt</a>
+            </li>
         </ul>
-    </nav>
+        </nav>
+        <img id="logo" src="Pics/bara_johannas.png" alt="Johannas logotyp" width="700px" height="120px" />
+    </header>
+     
+     <main>
+        <aside id="listofblogposts">
+            <dl>
+                <dt>september</dt>
+                <dd><a href="#firstpost">mitt första inlägg</a>
+                </dd>
+                <dd><a href="#secondpost">mitt andra inlägg</a>
+                </dd>
+                <dd><a href="#thirdpost">mitt tredje inlägg</a>
+                </dd>
+            </dl>
+        </aside>
         
-    <div id="content">
-    
-        <!--blog starts here-->
-        <div id="blogg">
-            <h3>Min kursblogg</h3> 
-            
-            <div id="listofblogposts">
-                <dl>
-                    <dt>September</dt>
-                    <dd><a href="#firstpost">Mitt första inlägg</a></dd>
-                    <dd><a href="#secondpost">Mitt andra inlägg</a></dd>
-                    <dd><a href="#thirdpost">Mitt tredje inlägg</a></dd>
-                </dl>
-            </div>
-            
-            <!--Third blogpost-->
-                <div id="thirdpost">
-                    <h3>Videotaggen i HTML5</h3>
-                    <p>En vänlig själ som skapat testvideos i olika format som vi webbutvecklare kan testa med.</p>
-                    <video controls>
-                        <source src="Videos/small.webm" type=video/webm />
-                        <source src="Videos/small.ogv" type=video/ogg />
-                        <p>Din webbläsare stöder inte <code>video</code>-taggen</p>
-                    </video>
-                  <p><a href="http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5/ " title="Här kan du ladda ner testvideon i olika format " target="_blank">Här kan du hämta dina egna videos i olika format</a></p>
-                  <p>Skrivet av Johanna 2014-09-17</p>  
-                </div>
-               
-                <!--Second blogpost-->
-                <div id="secondpost">
-                    <h3>Thank Good It's Friday</h3>
-                    <img id= "smileyface" src="Pics/SmileFace.svg " alt="Gul rund gubbe som ler " width="100" height="100"/>
-                    <p>Önskar alla en härlig helg!</p>
-                    <p>Skrivet av Johanna 2014-09-12</p>  
-                </div>
-               
-               <!--First blogpost-->
-                <div id="firstpost">
-                    <h3>Mitt första inlägg</h3>
-                    <p>Här kommer jag att skriva blogginlägg som handlar om mina labbar.</p>
-                    <p>Skrivet av Johanna 2014-09-10</p>  
-                </div> 
-            </div>
-        </div>
-    </body>
+        <section>
+             <article class="blog" id="thirdpost">
+                <h1>Videotaggen i HTML5</h1>
+                <p class="blogparagraph">En vänlig själ som skapat testvideos i olika format som vi webbutvecklare kan testa med.</p>
+                <video controls>
+                    <source src="Videos/small.webm" type=video/webm />
+                    <source src="Videos/small.ogv" type=video/ogg />
+                </video>
+                <p><a class="bloglink" href="http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5/ " title="Här kan du ladda ner testvideon i olika format " target="_blank">Här kan du hämta dina egna videos i olika format</a>
+                </p>
+                <p class="author">Skrivet av Johanna 2014-09-17</p>
+            </article>
+
+            <article class="blog" id="secondpost">
+                <h1>Thank Good It's Friday</h1>
+                <img id="smileyface" src="Pics/SmileFace.svg " alt="Gul rund gubbe som ler " width="100" height="100" />
+                <p class="blogparagraph">Önskar alla en härlig helg!</p>
+                <p class="author">Skrivet av Johanna 2014-09-12</p>
+            </article>
+
+            <article class="blog" id="firstpost">
+                <h1>Mitt första inlägg</h1>
+                <p class="blogparagraph">Här kommer jag att skriva blogginlägg som handlar om mina labbar.</p>
+                <p class="author">Skrivet av Johanna 2014-09-10</p>
+            </article>
+        </section>
+            </main>
+            <footer>
+                
+            </footer>
+   
+    </div>
+</body>
 </html>
