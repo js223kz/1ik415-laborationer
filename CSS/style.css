@@ -112,7 +112,6 @@ nav ul li a{
 	border-right: 1px solid #ffffff;
 }
 
-
 /*links*/
 .active{
 	color: #000000;
@@ -126,13 +125,13 @@ header a:hover {
 .externallink:active {color: orange; text-decoration: none; }
 
 
-
 /*headerheadlines <div id="indexheadline" alt="Johannas logotyp" width="700px" height="120px" </div>*/
 #indexHeader{
-	background-image: url(CSS/Pics/bara_johannas.png); background-repeat: no-repeat; background-position: center center;;
-	
+        background: url(/CSS/Pics/bara_johannas.png) center no-repeat;
+        height:100%;
+        width:100%;
+} 	
 
-}
 main{
 	width: 100%;
 	height: auto;
@@ -249,6 +248,9 @@ p.author{
 }
 #presentation dd{
 	margin-left:10px;
+}
+#presentation li a{
+	color: #ffffff;
 }
 
 #interests{
