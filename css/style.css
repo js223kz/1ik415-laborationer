@@ -82,11 +82,7 @@ h4{
 }
 /*same for all pages included in the header*/
 header{
-	width: 100%;
-	height: 200px;
-    border-bottom: 10px solid;
-	border-color: #424274;
-	display: block;
+
 
 }
 nav{
@@ -124,12 +120,30 @@ header a:hover {
 .externallink:hover {background-color: silver; text-decoration: underline; }
 .externallink:active {color: orange; text-decoration: none; }
 
-
-/*headerheadlines <div id="indexheadline" alt="Johannas logotyp" width="700px" height="120px" </div>*/
+/*header backgroundimages*/
 #indexheader{
-        background: url(Pics/bara_johannas.png) center no-repeat;
-        height:100%;
-        width:100%;
+    background: url(pics/bara_johannas.png) center no-repeat;
+   	width: 100%;
+	height: 200px;
+    border-bottom: 10px solid;
+	border-color: #424274;
+	display: block;
+} 
+#laborationheader{
+    background: url(Pics/Laborationer.jpg) center no-repeat;
+   	width: 100%;
+	height: 200px;
+    border-bottom: 10px solid;
+	border-color: #424274;
+	display: block;
+} 
+#presentationheader{
+    background: url(Pics/presentation.png) center no-repeat;
+   	width: 100%;
+	height: 200px;
+    border-bottom: 10px solid;
+	border-color: #424274;
+	display: block;
 } 	
 
 main{
@@ -239,6 +253,7 @@ p.author{
 	float: left;
 	margin: 10px;
 }
+
 /*prestentation.html*/
 #imagejohanna{
 	margin: 10px 10px;
