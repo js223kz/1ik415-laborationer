@@ -80,11 +80,6 @@ h4{
 	color: #ffffff;
 	
 }
-/*same for all pages included in the header*/
-header{
-
-
-}
 nav{
 	margin-top:0;
 }
@@ -130,7 +125,7 @@ header a:hover {
 	display: block;
 } 
 #laborationheader{
-    background: url(Pics/Laborationer.jpg) center no-repeat;
+    background: url(pics/Laborationer.jpg) center no-repeat;
    	width: 100%;
 	height: 200px;
     border-bottom: 10px solid;
@@ -138,7 +133,7 @@ header a:hover {
 	display: block;
 } 
 #presentationheader{
-    background: url(Pics/presentation.png) center no-repeat;
+    background: url(pics/presentation.png) center no-repeat;
    	width: 100%;
 	height: 200px;
     border-bottom: 10px solid;
