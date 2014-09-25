@@ -126,8 +126,8 @@ header a:hover {
 
 
 /*headerheadlines <div id="indexheadline" alt="Johannas logotyp" width="700px" height="120px" </div>*/
-#indexHeader{
-        background: url(/CSS/Pics/bara_johannas.png) center no-repeat;
+#indexheader{
+        background: url(CSS/Pics/bara_johannas.png) center no-repeat;
         height:100%;
         width:100%;
 } 	
@@ -299,6 +299,7 @@ section dl dd {
 	width: 300px;
 	float: left;
 	margin-left: 0;
+	margin-bottom: 20px;
 }
 table {
 	padding: 20px 20px 20px 20px; 
@@ -306,6 +307,7 @@ table {
 	margin-top: 20px;
 	float: left;
 }
+
 thead tr th{
 	border: 1px solid #000000;
 	padding: 6px 6px 6px 6px;  
