@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <title>Blogg</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
-    <link rel ="stylesheet" href="css/print.css" type="text/css" media="print"> 
+    <link rel ="stylesheet" href="css/print.css" type="text/css" media="print">
+    <link rel ="stylesheet" href="css/mobile.css" type="text/css" media="screen (and max-device-width: 480px)">
 </head>
 
 <body>
@@ -27,40 +28,42 @@
         </header>
      
          <main>
-            <aside class="sidebar" id="blogpostlist">
-                <dl>
-                    <dt>september</dt>
-                    <dd><a class= "internallink" href="#firstpost">mitt första inlägg</a>
-                    </dd>
-                    <dd><a class= "internallink" href="#secondpost">mitt andra inlägg</a>
-                    </dd>
-                    <dd><a class= "internallink" href="#thirdpost">mitt tredje inlägg</a>
-                    </dd>
-                    <dd><a class= "internallink" href="#fourthpost">mitt fjärde inlägg</a>
-                    </dd>
-                    <dd><a class= "internallink" href="#fifthpost">mitt femte inlägg</a>
-                    </dd>
-                </dl>
+            <aside class="sidebar">
+                <menu id="blogpostlist">
+                    <ul>
+                        <h1>september</h1>
+                        <li><a class= "internallink" href="#firstpost">mitt första inlägg</a></li>
+                        <li><a class= "internallink" href="#secondpost">mitt andra inlägg</a></li>
+                        <li><a class= "internallink" href="#thirdpost">mitt tredje inlägg</a></li>
+                        <li><a class= "internallink" href="#fourthpost">mitt fjärde inlägg</a></li>
+                        <li><a class= "internallink" href="#fifthpost">mitt femte inlägg</a></li>
+                    </ul>
+                </menu>
             </aside>
         
-            <section>
-                <article class="blog" id="fifthpost">
-                    <h1>copycat</h1>
+            <section class="blog">
+                <article id="fifthpost">
+                    <h1 class="blogheadline">copycat</h1>
                     <p class="blogparagraph">I veckans labbuppgift skulle vi efterapa en färdig hemsida. Html-koden var satt och fick inte ändras. Med enbart CSS skulle vårt eget resultat komma så nära det ursprungliga som möjligt. Å ena sidan ljuv musik för en designanalfabet som jag själv, men sjukt mycket svårare än var jag först trodde. Nåja, färdig nu...fredag eftermiddag. Over and out!</p>
                     <p><a class="externallink" href="https://uppgift-3-3-c9-js223kz.c9.io/index.html" title="Se mitt resultat som Copycat">Här har ni resultatet</a>
-                    <p class="author">Skrivet av Johanna 2014-10-03</p>
+                    <footer class="bloggfooter">
+                       <p class="footertext">Skrivet av Johanna 2014-10-03</p> 
+                    </footer>
                 </article>
                 
-                <article class="blog" id="fourthpost">
-                    <h1>mördarmorot</h1>
+                <article id="fourthpost">
+                    <h1 class="blogheadline">mördarmorot</h1>
                     <img class="left" src="css/pics/morot.jpg" alt="Bild på en galet stor morot"/>
                     <p class="blogparagraph">En helt galen morot som jag drog upp i kolonutten idag. Är faktiskt lite rädd för den och inte helt sugen på att äta den. Hehe...nåja där ser man att det växer trots att jag inte tillsatt näring. Det är sant det de säger om den skånska myllan.</p>
                     <p class="blogparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. Sed quam odio, tempus ac, aliquam molestie, varius ac, tellus. Vestibulum ut nulla aliquam risus rutrum interdum. Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra.</p>
                     <p class="blogparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. Sed quam odio, tempus ac, aliquam molestie, varius ac, tellus. Vestibulum ut nulla aliquam risus rutrum interdum. Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra.</p>
-                    <p class="author">Skrivet av Johanna 2014-09-24</p>
+                    <footer class="bloggfooter">
+                       <p class="footertext">Skrivet av Johanna 2014-09-24</p>
+                    </footer>
                 </article>
-                 <article class="blog" id="thirdpost">
-                    <h1>videotaggen i HTML5</h1>
+                
+                <article id="thirdpost">
+                    <h1 class="blogheadline">videotaggen i HTML5</h1>
                     <p class="blogparagraph">En vänlig själ som skapat testvideos i olika format som vi webbutvecklare kan testa med.</p>
                     <video controls>
                         <source class="left" src="Videos/small.webm" type=video/webm />
@@ -68,25 +71,32 @@
                     </video>
                     <p><a class="externallink" href="http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5/ " title="Här kan du ladda ner testvideon i olika format " target="_blank">Här kan du hämta dina egna videos i olika format</a>
                     </p>
-                    <p class="author">Skrivet av Johanna 2014-09-17</p>
+                    <footer class="bloggfooter">
+                        <p class="footertext">Skrivet av Johanna 2014-09-17</p>
+                    </footer>
+                    
                 </article>
     
                 <article class="blog" id="secondpost">
-                    <h1>thank good it's Friday</h1>
+                    <h1 class="blogheadline">thank good it's Friday</h1>
                     <img id="smileyface" src="css/pics/SmileFace.svg " alt="Gul rund gubbe som ler " width="100" height="100" />
                     <p class="blogparagraph">Önskar alla en härlig helg!</p>
-                    <p class="author">Skrivet av Johanna 2014-09-12</p>
+                    <footer class="bloggfooter">
+                       <p class="footertext">Skrivet av Johanna 2014-09-12</p> 
+                    </footer>
                 </article>
     
                 <article class="blog" id="firstpost">
-                    <h1>mitt första inlägg</h1>
+                    <h1 class="blogheadline">mitt första inlägg</h1>
                     <p class="blogparagraph">Här kommer jag att skriva blogginlägg som handlar om mina labbar.</p>
-                    <p class="author">Skrivet av Johanna 2014-09-10</p>
+                    <footer class="bloggfooter">
+                        <p class="footertext">Skrivet av Johanna 2014-09-10</p>
+                    </footer>
                 </article>
             </section>
         </main>
         
-        <footer></footer>
+        <footer class="pagebottom"></footer>
    </div>
 </body>
 </html>
