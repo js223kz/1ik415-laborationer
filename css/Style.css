@@ -61,9 +61,9 @@ p{
 	font-size: 0.9em;
 	line-height: 1.4em;
 }
-.menulist a:link {text-decoration: underline;}
+/*.menulist a:link {text-decoration: underline;}
 .menulist a:visited {color: #ffffff; text-decoration: underline;}
-.menulist a:hover {color: #8ce9ec; text-decoration: underline;}
+.menulist a:hover {color: #8ce9ec; text-decoration: underline;}*/
 
 #wrapper{
     width: 80em;
@@ -136,6 +136,11 @@ nav a:visited {color: #ffffff; text-decoration: none; }
     margin-left: 1.6em;
     width: 60%;
 }
+.sidebarlist{
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+    height: auto;
+}
 .sidebarheadline{
     font-size: 1.5em;
     margin-left: 0.4em;
@@ -158,11 +163,7 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 .sidebarlink:visited {color: #ffffff; text-decoration: underline;}
 .sidebarlink:hover {color: #8ce9ec; text-decoration: underline;}
 
-.sidebarlist{
-    padding-bottom: 0.8em;
-    padding-top: 0.8em;
-    height: auto;
-}
+
 .contentsection{
     width: 60%;
     margin-top: 12em;
@@ -182,7 +183,6 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 }
 .contentlink{
     color: #ffffff;
-    margin-bottom: 1.6em;
 }
 
 .contentlink:link {text-decoration: underline;}
@@ -199,7 +199,6 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 	font-size: 0.7em;
 	font-family: Verdana, Arial, sans-serif;
 	font-style: italic;
-
 }
 
 /*blogimages left or right*/
@@ -276,6 +275,51 @@ dd {
 }
 .contactinfo{
     text-align: center;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+}
+#contactinfosection{
+    height: auto;
+    width: 100%;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+#contactform.contentsection{
+    width: 100%;
+}
+.formheadlines{
+    margin-top: 0.8em;
+}
+input{
+    padding-top: 0.8em;
+    margin-top: 0.8em;
+    border: 0.2em solid  #168689;
+    border-radius: 0.4em;
+}
+label{
+    font-size: 1em;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+    color: #ffffff;
+}
+textarea{
+    border: 0.3em solid  #168689;
+    border-radius: 0.4em;
+}
+
+.education{
+    width: 47%;
+    height: auto;
+    float: left;
+    background-color: #168689;
+}
+.workexperience{
+    width: 47%;
+    height: auto;
+    float: left;
+    margin-left: 6%;
+    background-color: #168689;
 }
 
 

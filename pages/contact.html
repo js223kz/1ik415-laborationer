@@ -23,13 +23,60 @@
                     </ul>
                 </nav>
                 <section class="sidebarsection">
+                    <div id="contactinfosection">
                         <h1 class="contactheadline">johanna szepanski</h1>
                         <h4 class="contactinfo">östergatan 16, 23940 falsterbo<br />+46 705 266 130<br />js@powerapp.se</h4>
-                        <h4 class="contactinfo"><a class="contentlink" href="https://www.linkedin.com/profile/view?id=312122766&trk=nav_responsive_tab_profile" title="Öppnar Johannas profil på LinkedIn" target="_blank">Besök mig på linkedin</a></h4>
+                        <h4 class="contactinfo"><a class="contentlink externallink" href="https://www.linkedin.com/profile/view?id=312122766&trk=nav_responsive_tab_profile" title="Öppnar Johannas profil på LinkedIn" target="_blank">Besök mig på linkedin</a></h4>
+                    </div>
                 </section>    
            </aside>
            <main>
-              <section id="contactformsection">
+              <section class="contentsection">
+                  <div id="contactform">
+                  <form method="POST" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php">
+                    <h1 class="contentheadline">kontakta gärna mig!</h1>
+                        <div id="names">
+                            <h4 class="formheadlines">kontaktinformation</h4>
+                            <div><input type="text" id="firstname" name="firstname" placeholder="Förnamn"/>
+                            </div>
+                            <div><input type="text" id="lastname" name="lastname" placeholder="Efternamn" />
+                            </div>
+                        </div>
+                        
+                        <div id="how">
+                            <h4 class="formheadlines">hur vill du att jag kontaktar dig?</h4>
+                            <div><input id="phone" value="phone" type="radio" name="detail"checked/>
+                            <label for="phone">telefon</label>
+                            </div>
+                            <div><input id="email" value="email" type="radio" name="detail"/>
+                            <label for="email">e-post</label>
+                            </div>
+                            <div><input type="text" placeholder="Telefonnumer"/>
+                            </div>
+                            <div><input type="text" placeholder="E-post"/>
+                            </div>
+                        </div>
+                        
+                        <div id="when">
+                            <h4 class="formheadlines">när vill du helst att jag kontaktar dig?</h4>
+                            <select name="whenoption" id="whenoption">
+                                <option class="radionbtn"checked>På morgonen</option>
+                                <option>Efter lunch</option>
+                                <option>På kvällen</option>
+                            </select>
+                        </div>
+                        
+                        <div id="aboutwhat">
+                            <h4 class="formheadlines">när vill du helst att jag kontaktar dig?</h4>
+                            <textarea cols="30" rows="5" value="whatiwant"></textarea>
+                        </div>
+                    
+                    <div id="sendbutton">
+                        <button type="submit">Skicka</button>
+                    </div>
+                </form>
+                      
+                  </div>
               </section> 
            </main>
            <footer id="pagebottom"></footer>
