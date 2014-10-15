@@ -52,7 +52,7 @@ table {
 
 h4{
     font-size: 1em;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Shadows Into Light', cursive;
     font-variant: small-caps;
     color: #ffffff;
 }
@@ -83,7 +83,7 @@ header{
     background: url(pics/girland.png) left no-repeat;
 }
 .pageheadline{
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Varela', sans-serif;
     font-size: 5em;
     position:absolute;
     top: 1em;
@@ -112,19 +112,12 @@ nav li{
 
     
 }
-nav li:hover {
-    background-color: #8ce9ec;
-    background: url('pics/sprites.png') 0px 0px ;
-	background-repeat: no-repeat;
-    
-}
-
 nav a{
     font-size: 1em;
     line-height: 2.5em;
-	font-family: Verdana, Arial, Sans Serif;
-	font-variant: small-caps;
+	font-family: 'Varela', sans-serif;
 	text-decoration: none;
+	font-variant: small-caps;
 	color: #ffffff;
 	left: 2.5em;
 	position: absolute;
@@ -149,14 +142,14 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 .sidebarheadline{
     font-size: 1.5em;
     margin-left: 0.4em;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Varela', sans-serif;
     font-variant: small-caps;
 }
 .sidebarlistitem{
     font-size: 0.7em;
     line-height: 1.4em;
     margin-left: 1.6em;
-	font-family: Verdana, Arial, Sans Serif;
+	font-family: 'Varela', sans-serif;
 	color: #ffffff;
 }
 .sidebarlink{
@@ -183,7 +176,7 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 }
 .contentheadline{
     font-size: 2em;
-	font-family: "Courier New", Courier, monospace;
+	font-family: 'Varela', sans-serif;
 	font-variant: small-caps;
 	color: #000000;
 }
@@ -235,7 +228,7 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 }
 #gradetableheader.gradetable{
     font-size: 1.5em;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Varela', sans-serif;
     font-variant: small-caps;
     margin-left: 0em;
     margin-bottom: 0em;
@@ -282,7 +275,7 @@ dd {
     font-size: 1.5em;
     margin-left: 0em;
     text-align: center;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Varela', sans-serif;
     font-variant: small-caps;
 }
 .contactinfo{
@@ -311,7 +304,7 @@ input{
 }
 label{
     font-size: 1em;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Varela', sans-serif;
     font-variant: small-caps;
     color: #ffffff;
 }
@@ -333,5 +326,9 @@ textarea{
     margin-left: 6%;
     background-color: #168689;
 }
-
+#pagebottom{
+    width: 100%;
+    height: 3em;
+    background-color: #168689;
+}
 
