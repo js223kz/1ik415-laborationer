@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-
+	background-color: #fff;
 }
 ol, ul {
 	list-style: none;
@@ -48,193 +48,150 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*same for all pages*/
-#wrapper{
-    width: 960px;
-    background-color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
+h4{
+    font-size: 1em;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+    color: #000000;
 }
 p{
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 0.9em;
-	line-height: 1.4em;
-	margin-bottom: 10px;
+    font-family: Verdana, Arial, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.7em;
 	color: #000000;
 }
 
-h1{
-	font-size: 2em;
-	font-family: Verdana, Arial, sans-serif;
-	font-variant: small-caps;
-	color: #000000;
 
-}
-
-h4{
-	font-size: 0.9em;
-	line-height: 1.5em;
-	font-family: Verdana, Arial, sans-serif;
-	font-variant: small-caps;
-	margin-left: 10px;
-	margin-top: 10px;
-	color: #000000;
-	
-}
-nav{
-	display: none;
-}
-nav ul{
-	display: none;
-}
-nav ul li{
-	display:none;
-}
-nav ul li a{
-	display: none;
+#wrapper{
+    width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.8em;
+    background-color: #ffffff;
+    display: block;
 }
 header{
+    width:100%;
+    height:6em;
+    position: absolute;
+}
+.pageheadline{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 5em;
+    position:absolute;
+    top: 1em;
+}
+.noprint{
 	display: none;
 }
-#indexheader{
-	display: none;
-} 
-#laborationheader{
-    display: none;
-} 
-#presentationheader{
-    display: none;
-}
-#contactheader{
-    display: none;
-} 
-/*links*/
-.active{
-	display: none;
-}
-.internallink{
-	display: none;
-}
-
-p a:after {
-content: " (" attr(href) ")";
-font-size: 80%;
-}
-#mylinkedin a:after {
-content: " (" attr(href) ")";
-font-size: 80%;
-}
-
-/*Pageheaders and backgroundimages*/
-header{
-	display: none;
-}
-
-main{
-	width: 100%;
-	height: auto;
-	background-color:#ffffff;
-}
-section{
-	float: left;
-	height: auto;
-	width: 90%;
-	background-color:#ffffff;
-	margin-top: 30px;
-	margin-left: 30px;
-	margin-bottom: 30px;
-}
-article{
-	width: 100%;
-	margin-bottom: 20px;
-	border-bottom: 1px solid #000000;
-}
-/*sidebar*/
-aside dl dt{
-	font-size: 0.9em;
-	line-height: 1.5em;
-	font-family: Verdana, Arial, sans-serif;
-	font-variant: small-caps;
-	text-decoration: none;
-	margin-left: 10px;
-	margin-top: 10px;
-	color: #000000;
-	
-}
-aside dl dd {
-	font-size: 0.7em;
-	line-height: 1.1em;
-	font-family: Verdana, Arial, sans-serif;
-	font-style: italic;
-	margin-left: 10px;
-	margin-top: 10px;
-	color: #000000;
-	
-}
-#blogpostlist ul h1{
-	display: none;
-}
-aside dl dd a{
-	display: none;
-}
-aside ul{
-	margin-top: 10px;
-}
-aside ol li{
-	font-size: 0.7em;
-	line-height: 1.1em;
-	font-family: Verdana, Arial, sans-serif;
-	font-style: italic;
-	margin-left: 20px;
-	margin-top: 10px;
-	color: #000000;
-	
-}
-aside ol li a{
-	display: none;	
-}
-aside ol{
-	margin-bottom: 10px;
-		
-}
-aside ul li{
-	font-size: 0.7em;
-	line-height: 1.1em;
-	font-family: Verdana, Arial, sans-serif;
-	font-style: italic;
-	margin-left: 20px;
-	margin-top: 10px;
-	color: #000000;
-
-}
-aside ul li a{
-	display: none;
-}
-
 aside{
-	float: left;
-	width: 300px;
-	height: auto;
-	min-height: 200px;
-	background-color: #000000;
-	margin-top: 30px;
-	margin-left:10px;
+    width:30%;
+    height: auto;
+    float:left;
+    margin-top: 12em;
+    margin-bottom: 2em;
 }
-#blogpostlist dt{
-	display: none;
+#contactsidebar aside{
+	width: 100%;
+}
+.sidebarsection{
+    background-color: #ffffff;
+    margin-left: 1.6em;
+    width: 60%;
+}
+#interestslist.sidebarsection{
+	margin-left: 0em;
+}
+#contactsidebarsection.sidebarsection{
+	width: 100%;
+	margin-left: 0em;
 }
 
-/*blogposts*/
-p.blogparagraph{
-	margin: 10px auto;
+
+.sidebarlist{
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+    height: auto;
 }
-p.author{
-	margin: 10px auto;
+#interestesidebarlist.sidebarlist{
+	padding-top: 0em;
+}
+.sidebarheadline{
+    font-size: 1.5em;
+    margin-left: 0.4em;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+    color: #000000;
+}
+#interestsheadline.sidebarheadline{
+	font-size: 2em;
+	font-weight: bold;
+}
+#workexperienceheadline.sidebarheadline{
+	font-size: 2em;
+	font-weight: bold;
+}
+#educationsidebarheadline.sidebarheadline{
+	font-size: 2em;
+	font-weight: bold;
+}
+.sidebarlistitem{
+    font-size: 0.7em;
+    line-height: 1.4em;
+    margin-left: 1.6em;
+	font-family: Verdana, Arial, Sans Serif;
+	color: #000000;
+}
+.sidebarlink{
+    text-decoration: underline;
+    color: #000000;
+}
+
+.sidebarlink:link {text-decoration: underline;}
+.sidebarlink:visited {color: #000000; text-decoration: underline;}
+
+.contentsection{
+    width: 60%;
+    margin-top: 12em;
+    margin-bottom: 2em;
+    float:left;
+    height: auto;
+    background-color: #ffffff;
+}
+#indexcontentsection.contentsection{
+    width: 100%;
+}
+.contentarticle{
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+	border-bottom: 0.1em solid #000000;
+}
+.contentheadline{
+    font-size: 2em;
+    font-weight: bold;
+	font-family: "Courier New", Courier, monospace;
+	font-variant: small-caps;
+	color: #000000;
+}
+.contentlink{
+    color: #000000;
+}
+
+.externallink:link:after, a:visited:after { content:" [" attr(href) "] "; }
+
+.contentparagraph{
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+}
+.blogfooter{
+    margin-top: 0.3em;
+    margin-bottom: 0.8em;
 	font-size: 0.7em;
-	line-height: 1em;
 	font-family: Verdana, Arial, sans-serif;
 	font-style: italic;
 }
+
 /*blogimages left or right*/
 .left{
 	float: right;
@@ -244,154 +201,114 @@ p.author{
 	float: left;
 	margin: 10px;
 }
-
-/*contact.html*/
-
-label {  
-    display: inline-block;  
-    cursor: pointer;  
-    position: relative; 
-    padding-left: 10px;  
-   	font-size: 0.8em;
-	line-height: 1.5em;
-	font-family: Verdana, Arial, sans-serif;
-	font-variant: small-caps;
-    } 
-    
-.contactinfo{
-	color: #000000;
-	margin-left: 0px;
+#copycat.right{
+    max-width: 200px;
+    float: left;
 }
-#contactform{
-	display: none;
-}
-#myname{
-	color: #000000;
-	text-align: center;
-	margin-top: 10px;
-}
-#myinfo{
-	color: #000000;
-	text-align: center;
-	margin-top: 10px;
-}
-#mylinkedin{
-	color: #000000;
-	text-align: center;
-	margin-top: 10px;
-}
-#names{
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#how{
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#when{
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#aboutwhat{
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#sendbutton{
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-/*prestentation.html*/
-#imagejohanna{
-	margin: 10px 10px;
-}
-#presentation dt{
-	margin-left:0px;
-}
-#presentation dd{
-	margin-left:10px;
-}
-#presentation li a{
-	color: #000000;
+#pagebottom{
+    display: none;
 }
 
-#interests{
-	width: 300px;
-	margin-bottom: 10px;
-	margin-left: 10px;
+/*laboration page*/
+.gradetable{
+    margin-bottom: 2em;
 }
-#education h4{
-	margin-left: 10px;
-}
-#aboutme{
-	float: left;
-	height: auto;
-	width: 600px;
-	background-color:#000000;
-	margin-top: 30px;
-	margin-left: 30px;
-}
-/*laboration.html*/
-#laboration1{
-	height: auto;
-	width: 600px;
-	background-color:#000000;
-	margin-top: 30px;
-	margin-left: 30px;
-	
-}
-section dl dt{
-	font-size: 0.9em;
-	line-height: 1.5em;
-	font-family: Verdana, Arial, sans-serif;
-	margin-top: 10px;
-	color: #000000;
-	
-}
-section dl dd {
-	font-size: 0.7em;
-	line-height: 1.1em;
-	font-family: Verdana, Arial, sans-serif;
-	margin-top: 10px;
-	color: #000000;
-	
-}
-#sidebar{
-	height:auto;
-	width: 300px;
-	float: left;
-	margin-left: 0;
-	margin-bottom: 20px;
+#gradetableheader.gradetable{
+    font-size: 1.5em;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+    margin-left: 0em;
+    margin-bottom: 0em;
 }
 table {
-	padding: 20px 20px 20px 20px; 
-	margin-left: 10px;
 	margin-top: 20px;
-	float: left;
+	padding: 6px 6px 6px 6px;
 }
-
 thead tr th{
+	padding: 6px 6px 6px 6px; 
 	border: 1px solid #000000;
-	padding: 6px 6px 6px 6px;  
 }
 tfoot tr th{
+	padding: 6px 6px 6px 6px;
 	border: 1px solid #000000;
-	padding: 6px 6px 6px 6px; 
 }
 tr{
-	border: 1px solid #000000;
 	padding: 6px 6px 6px 6px;  
 	font-size: 0.7em;
 	line-height: 1.1em;
 	font-family: Verdana, Arial, sans-serif;
 	color: #000000;
+	border: 1px solid #000000;
 }
 td{
 	border: 1px solid #000000;
-	padding: 6px 6px 6px 6px;  
 }
-article dl dd{
-	margin-bottom: 10px;
+dl{
+    margin-bottom: 0.8em;
 }
-footer{
-	display: none;
+
+dt{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.4em;
 }
+dd {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+.contactheadline{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-left: 0em;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+}
+.contactinfo{
+	font-size: 1.5em;
+	line-height: 2.5em;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+}
+#contactinfosection{
+    height: auto;
+    width: 100%;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+#contactform.contentsection{
+    width: 100%;
+}
+.formheadlines{
+    margin-top: 0.8em;
+}
+input{
+    padding-top: 0.8em;
+    margin-top: 0.8em;
+    border: 0.2em solid  #168689;
+    border-radius: 0.4em;
+}
+label{
+    font-size: 1em;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+    color: #ffffff;
+}
+textarea{
+    border: 0.3em solid  #168689;
+    border-radius: 0.4em;
+}
+
+.education{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.workexperience{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+

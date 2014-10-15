@@ -49,230 +49,164 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*same for all pages*/
-#wrapper{
-    width: 960px;
-    background-color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
+
+h4{
+    font-size: 1em;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+    color: #ffffff;
 }
 p{
-	font-family: Verdana, Arial, sans-serif;
+    font-family: Verdana, Arial, sans-serif;
 	font-size: 0.9em;
 	line-height: 1.4em;
-	margin-bottom: 0.8em;
 }
+/*.menulist a:link {text-decoration: underline;}
+.menulist a:visited {color: #ffffff; text-decoration: underline;}
+.menulist a:hover {color: #8ce9ec; text-decoration: underline;}*/
 
-h1{
-	font-size: 2em;
-	font-family: Verdana, Arial, sans-serif;
-	font-variant: small-caps;
-	color: #000000;
-
+#wrapper{
+    width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.8em;
+    background-color: #84b9ba;
+    display: block;
 }
-h4{
-	font-size: 0.9em;
-	line-height: 1.5em;
-	font-family: Verdana, Arial, sans-serif;
-	font-variant: small-caps;
-	margin-left: 0.8em;
-	margin-top: 0.8em;
-
-	color: #ffffff;
-	
-}
-/*Pageheaders and backgroundimages*/
 header{
-	width: 100%;
-	height: 200px;
-	display: block;
-	position: relative;
+    width:78em;
+    height:9em;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    top: 0.8em;
+    position: absolute;
+    background: url(pics/girland.png) left no-repeat;
 }
-#indexheader{
-    background: url(pics/bara_johannas.png) center no-repeat;
-} 
-#laborationheader{
-    background: url(pics/Laborationer.jpg) center no-repeat;
-} 
-#presentationheader{
-    background: url(pics/presentation.png) center no-repeat;
+.pageheadline{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 5em;
+    position:absolute;
+    top: 1em;
+    right: 2em;
 }
-#contactheader{
-    background: url(pics/contact.jpg) center no-repeat;
-} 
-nav{
-	width: 100%;
-	height: 50px;
-	background-color: #424274;
+aside{
+    width:30%;
+    height: auto;
+    float:left;
+    margin-top: 12em;
+    margin-bottom: 2em;
+    margin-left: 1.6em;
 }
 nav ul{
-	height: 50px;
-	display: table;
+    width: 60%;
+    margin-bottom: 2em;
+    margin-left: 1.6em;
+    
 }
 nav li{
-	display: table-cell;
-	line-height: 50px;
+    height: 2.5em;
+    background: url('pics/sprites.png') -300px 0px ;
+	background-repeat: no-repeat;
+    border-bottom: 0.2em solid #84b9ba;
+    position: relative;
+
+    
 }
+nav li:hover {
+    background-color: #8ce9ec;
+    background: url('pics/sprites.png') 0px 0px ;
+	background-repeat: no-repeat;
+    
+}
+
 nav a{
-	font-size: 0.9em;
+    font-size: 1em;
+    line-height: 2.5em;
 	font-family: Verdana, Arial, Sans Serif;
 	font-variant: small-caps;
 	text-decoration: none;
 	color: #ffffff;
-	padding: 5px 10px 5px 30px;
-	border-right: 1px solid #424274;
+	left: 2.5em;
+	position: absolute;
+}
+nav a:link {text-decoration: none; }
+nav a:visited {color: #ffffff; text-decoration: none; }
+
+.active{
+    color: #168689;
 }
 
-#homesprite{
-	background: url('pics/sprite.png') 0 -48px;
-	background-repeat: no-repeat;
-	margin-left: 10px;
+.sidebarsection{
+    background-color: #168689;
+    margin-left: 1.6em;
+    width: 60%;
 }
-#homesprite:hover{
-	background: url('pics/sprite.png') 0 0px;
-	background-repeat: no-repeat;
-	margin-left: 10px;
-
-}
-#presentationsprite{
-	background: url('pics/sprite.png') 0 -240px;
-	background-repeat: no-repeat;
-	margin-left: 10px;
-}
-#presentationsprite:hover{
-	background: url('pics/sprite.png') 0 -192px;
-	background-repeat: no-repeat;
-	margin-left: 10px;
-
-}
-#laborationsprite{
-	background: url('pics/sprite.png') 0 -142px;
-	background-repeat: no-repeat;
-	margin-left: 10px;
-}
-#laborationsprite:hover{
-	background: url('pics/sprite.png') 0 -94px;
-	background-repeat: no-repeat;
-	margin-left: 10px;
-
-}
-#contactsprite{
-	background: url('pics/sprite.png') 0 -335px;
-	background-repeat: no-repeat;
-	margin-left: 10px;
-}
-#contactsprite:hover{
-	background: url('pics/sprite.png') 0 -287px;
-	background-repeat: no-repeat;
-	margin-left: 10px;
-}
-
-.externallink:link {text-decoration: underline; }
-.externallink:visited {color: purple; text-decoration: underline; }
-.externallink:hover {background-color: silver; text-decoration: underline; }
-.externallink:active {color: orange; text-decoration: none; }
-
-main{
-	width: 100%;
-	height: 100%;
-	background-color: #ffffff;
-}
-section{
-	float: left;
-	height: auto;
-	width: 600px;
-	background-color:#ffffff;
-	margin-top: 2.4em;
-	margin-left: 2.4em;
-	margin-bottom: 2.4em;
-}
-article{
-	width: 100%;
-	margin-bottom: 20px;
-	border-bottom: 0.02em solid  #CCC;}
-/*sidebar*/
-#blogpostlist{
-	padding: 0.8em 0.8em 1.6em 0.8em;
-}
-
-#blogpostlist h1{
-	color: #ffffff;
-	font-weight: normal;
-}
-#blogpostlist li {
-	font-size: 0.7em;
-	line-height: 1.1em;
-	font-family: Verdana, Arial, sans-serif;
-	font-style: italic;
-	color: #ffffff;
-
-}
-#blogpostlist a{
-	color:#ffffff;
-}
-
-aside ol li{
-	font-size: 0.7em;
-	line-height: 1.1em;
-	font-family: Verdana, Arial, sans-serif;
-	font-style: italic;
-	margin-left: 20px;
-	margin-top: 10px;
-	color: #ffffff;
-	
-}
-aside ol li a{
-	color: #ffffff;
-	
-}
-aside ol{
-	margin-bottom: 10px;
-		
-}
-aside ul li{
-	font-size: 0.7em;
-	line-height: 1.1em;
-	font-family: Verdana, Arial, sans-serif;
-	font-style: italic;
-	margin-left: 20px;
-	margin-top: 10px;
-	color: #ffffff;
-
-}
-aside ul li a{
-	color: #ffffff;
-}
-
-aside{
-	float: left;
-	width: 300px;
-	height: auto;
-	min-height: 200px;
-	background-color: #424274;
-	margin-top: 30px;
-	margin-left:10px;
-}
-
-/*blogposts*/
-p.blogparagraph{
-	margin: 10px auto;
-}
-.blogheadline{
-	margin-top: 0em;
-}
-.bloggfooter{
-    background-color: #ffffff;
+.sidebarlist{
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
     height: auto;
-    width: auto;
 }
-p.footertext{
-	margin: 10px auto;
+.sidebarheadline{
+    font-size: 1.5em;
+    margin-left: 0.4em;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+}
+.sidebarlistitem{
+    font-size: 0.7em;
+    line-height: 1.4em;
+    margin-left: 1.6em;
+	font-family: Verdana, Arial, Sans Serif;
+	color: #ffffff;
+}
+.sidebarlink{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.sidebarlink:link {text-decoration: underline;}
+.sidebarlink:visited {color: #ffffff; text-decoration: underline;}
+.sidebarlink:hover {color: #8ce9ec; text-decoration: underline;}
+
+
+.contentsection{
+    width: 60%;
+    margin-top: 12em;
+    margin-bottom: 2em;
+    float:left;
+}
+.contentarticle{
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+	border-bottom: 0.3em solid  #168689;
+}
+.contentheadline{
+    font-size: 2em;
+	font-family: "Courier New", Courier, monospace;
+	font-variant: small-caps;
+	color: #000000;
+}
+.contentlink{
+    color: #ffffff;
+}
+
+.contentlink:link {text-decoration: underline;}
+.contentlink:visited {color: #ffffff; text-decoration: underline;}
+.contentlink:hover {color: #8ce9ec; text-decoration: underline;}
+
+.contentparagraph{
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+}
+.blogfooter{
+    margin-top: 0.3em;
+    margin-bottom: 0.8em;
 	font-size: 0.7em;
-	line-height: 1em;
 	font-family: Verdana, Arial, sans-serif;
 	font-style: italic;
-	margin-bottom: 0.8em;
 }
+
 /*blogimages left or right*/
 .left{
 	float: right;
@@ -282,150 +216,44 @@ p.footertext{
 	float: left;
 	margin: 10px;
 }
-
-/*contact.html*/
-
-label {  
-    display: inline-block;  
-    cursor: pointer;  
-    position: relative; 
-    padding-left: 10px;  
-   	font-size: 0.8em;
-	line-height: 1.5em;
-	font-family: Verdana, Arial, sans-serif;
-	font-variant: small-caps;
-    } 
-    
-.contactinfo{
-	color: #000000;
-	margin-left: 0px;
+#copycat.right{
+    max-width: 200px;
+    float: left;
+}
+#pagebottom{
+    width: 100%;
+    height: 2em;
+    background-color: #168689;
+    clear: both;
 }
 
-#contactheadline {
-	margin-top: 10px;
+/*laboration page*/
+.gradetable{
+    width: 80%;
+    margin-bottom: 2em;
+    margin-left: 1.6em;
 }
-#myname{
-	color: #ffffff;
-	text-align: center;
-	margin-top: 10px;
-}
-#myinfo{
-	color: #ffffff;
-	text-align: center;
-	margin-top: 10px;
-}
-#mylinkedin{
-	color: #ffffff;
-	text-align: center;
-	margin-top: 10px;
-}
-
-
-#mylinkedin a:link {text-decoration: none; }
-#mylinkedin a:visited {color: white; text-decoration: none; }
-#mylinkedin a:hover {background-color: silver; text-decoration: underline; }
-#mylinkedin a:active {color: orange; text-decoration: none; }
-
-
-#names{
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#how{
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#when{
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#aboutwhat{
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#sendbutton{
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-/*prestentation.html*/
-#imagejohanna{
-	margin: 10px 10px;
-}
-#presentation dt{
-	margin-left:0px;
-}
-#presentation dd{
-	margin-left:10px;
-}
-#presentation li a{
-	color: #ffffff;
-}
-
-#interests{
-	width: 300px;
-	margin-bottom: 10px;
-	margin-left: 10px;
-}
-#education h4{
-	margin-left: 10px;
-}
-#aboutme{
-	float: left;
-	height: auto;
-	width: 600px;
-	background-color:#ffffff;
-	margin-top: 30px;
-	margin-left: 30px;
-}
-/*laboration.html*/
-#laboration1{
-	height: auto;
-	width: 600px;
-	background-color:#ffffff;
-	margin-top: 30px;
-	margin-left: 30px;
-	
-}
-section dl dt{
-	font-size: 0.9em;
-	line-height: 1.5em;
-	font-family: Verdana, Arial, sans-serif;
-	margin-top: 10px;
-	color: #000000;
-	
-}
-section dl dd {
-	font-size: 0.7em;
-	line-height: 1.1em;
-	font-family: Verdana, Arial, sans-serif;
-	margin-top: 10px;
-	color: #000000;
-	
-}
-#sidebar{
-	height:auto;
-	width: 300px;
-	float: left;
-	margin-left: 0;
-	margin-bottom: 20px;
+#gradetableheader.gradetable{
+    font-size: 1.5em;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+    margin-left: 0em;
+    margin-bottom: 0em;
+    margin-top: 1.6em;
 }
 table {
-	padding: 20px 20px 20px 20px; 
-	margin-left: 10px;
 	margin-top: 20px;
-	float: left;
 }
-
 thead tr th{
-	border: 1px solid #000000;
+	border: 1px solid #ffffff;
 	padding: 6px 6px 6px 6px;  
 }
 tfoot tr th{
-	border: 1px solid #000000;
+	border: 1px solid #ffffff;
 	padding: 6px 6px 6px 6px; 
 }
 tr{
-	border: 1px solid #000000;
+	border: 1px solid #ffffff;
 	padding: 6px 6px 6px 6px;  
 	font-size: 0.7em;
 	line-height: 1.1em;
@@ -433,16 +261,77 @@ tr{
 	color: #000000;
 }
 td{
-	border: 1px solid #000000;
+	border: 1px solid #ffffff;
 	padding: 6px 6px 6px 6px;  
 }
-article dl dd{
-	margin-bottom: 10px;
+dl{
+    margin-bottom: 0.8em;
 }
-.pagebottom{
-	clear: both;
-	height: 50px;
-	width: 100%;
-	margin-bottom: 0px;
-	background-color: #424274;
+
+dt{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.4em;
 }
+dd {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+.contactheadline{
+    font-size: 1.5em;
+    margin-left: 0em;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+}
+.contactinfo{
+    text-align: center;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+}
+#contactinfosection{
+    height: auto;
+    width: 100%;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+#contactform.contentsection{
+    width: 100%;
+}
+.formheadlines{
+    margin-top: 0.8em;
+}
+input{
+    padding-top: 0.8em;
+    margin-top: 0.8em;
+    border: 0.2em solid  #168689;
+    border-radius: 0.4em;
+}
+label{
+    font-size: 1em;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+    color: #ffffff;
+}
+textarea{
+    border: 0.3em solid  #168689;
+    border-radius: 0.4em;
+}
+
+.education{
+    width: 47%;
+    height: auto;
+    float: left;
+    background-color: #168689;
+}
+.workexperience{
+    width: 47%;
+    height: auto;
+    float: left;
+    margin-left: 6%;
+    background-color: #168689;
+}
+
+
