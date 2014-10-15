@@ -52,7 +52,9 @@ table {
 
 h4{
     font-size: 1em;
-    font-family: 'Varela', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-variant: small-caps;
     color: #ffffff;
 }
@@ -80,7 +82,9 @@ header{
     background: url(pics/girland.png) left no-repeat;
 }
 .pageheadline{
-    font-family: 'Varela', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 5em;
     position:absolute;
     top: 1em;
@@ -104,18 +108,21 @@ nav li{
     height: 2.5em;
     border-bottom: 0.2em solid #84b9ba;
     position: relative;
-    background: url('pics/sprites.png') -300px 0px ;
+    background: url('pics/sprites.png') -250px 0px ;
 	background-repeat: no-repeat;
 }
+nav li:hover{background: url('pics/sprites.png') 0px 0px; background-repeat: no-repeat;}
+
 nav a{
     font-size: 1em;
     line-height: 2.5em;
-	font-family: 'Varela', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	text-decoration: none;
 	font-variant: small-caps;
 	color: #ffffff;
 	left: 2.5em;
-	position: absolute;
+	
+	padding-left: 2em;
 }
 nav a:link {text-decoration: none; }
 nav a:visited {color: #ffffff; text-decoration: none; }
@@ -138,7 +145,7 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 .sidebarheadline{
     font-size: 1.5em;
     margin-left: 0.4em;
-    font-family: 'Varela', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
 }
 .sidebarlistitem{
@@ -173,7 +180,7 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 }
 .contentheadline{
     font-size: 2em;
-	font-family: 'Varela', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-variant: small-caps;
 	color: #000000;
 }
@@ -225,7 +232,7 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 }
 #gradetableheader.gradetable{
     font-size: 1.5em;
-    font-family: 'Varela', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
     margin-left: 0em;
     margin-bottom: 0em;
@@ -272,7 +279,7 @@ dd {
     font-size: 1.5em;
     margin-left: 0em;
     text-align: center;
-    font-family: 'Varela', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
 }
 .contactinfo{
@@ -301,7 +308,7 @@ input{
 }
 label{
     font-size: 1em;
-    font-family: 'Varela', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
     color: #ffffff;
 }
@@ -309,7 +316,6 @@ textarea{
     border: 0.3em solid  #168689;
     border-radius: 0.4em;
 }
-
 .education{
     width: 47%;
     height: auto;

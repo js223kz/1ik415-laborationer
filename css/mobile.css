@@ -50,7 +50,7 @@ table {
 }
 h4{
     font-size: 1em;
-    font-family: 'Varela', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
     src: url('fonts/texgyrecursor-regular.oft');
     color: #ffffff;
@@ -73,8 +73,8 @@ header{
     left: 0em;
 }
 .pageheadline{
-    font-family: 'Varela', sans-serif;
-    font-size:6em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 6em;
     position:absolute;
     top: 1em;
     right: 2em;
@@ -90,11 +90,13 @@ nav ul{
 }
 nav li{
     font-size: 4em;
-    font-family: 'Varela', sans-serif;
+    font-family: 'Raleway', sans-serif;
 	font-variant: small-caps;
-	background: url('pics/sprites.png') -300px 0px ;
+	background: url('pics/sprites.png') -300px -100px ;
 	background-repeat: no-repeat;
 }
+nav li:hover{background: url('pics/sprites.png') 0px -100px; background-repeat: no-repeat;}
+
 nav a{
     text-decoration: none;
 	color: #ffffff;
@@ -108,7 +110,8 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 }
 
 .sidebarsection{
-    background-color: #168689;
+    border: 1px solid #ffffff;
+    background-color: #84b9ba;
     width: 90%;
     margin-left: 5%;
     float: left;
@@ -121,14 +124,14 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 .sidebarheadline{
     font-size: 4em;
     margin-left: 0.4em;
-    font-family: 'Varela', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
 }
 .sidebarlistitem{
     font-size: 1.8em;
     line-height: 3em;
     margin-left: 1.6em;
-	font-family: 'Varela', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: #ffffff;
 }
 .sidebarlink{
@@ -151,7 +154,7 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 }
 .contentheadline{
     font-size: 4em;
-	font-family: 'Varela', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-variant: small-caps;
 	color: #000000;
 }
@@ -191,40 +194,42 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 
 /*laboration page*/
 .gradetable{
-    width: 80%;
+    width: 90%;
     margin-bottom: 2em;
-    margin-left: 1.6em;
+    margin-left: 5%;
+    margin-top: 1.6em;
 }
-#gradetableheader.gradetable{
-    font-size: 1.5em;
-    font-family: 'Varela', sans-serif;
+.gradetableheader{
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
     margin-left: 0em;
     margin-bottom: 0em;
-    margin-top: 1.6em;
+    
 }
 table {
 	margin-top: 20px;
+	border: 1px solid #ffffff;
 }
 thead tr th{
 	border: 1px solid #ffffff;
-	padding: 6px 6px 6px 6px;  
+	padding: 10px 10px 10px 10px;  
 }
 tfoot tr th{
 	border: 1px solid #ffffff;
-	padding: 6px 6px 6px 6px; 
+	padding: 10px 10px 10px 10px; 
 }
 tr{
 	border: 1px solid #ffffff;
-	padding: 6px 6px 6px 6px;  
-	font-size: 0.7em;
-	line-height: 1.1em;
+	padding: 10px 10px 10px 10px;  
+	font-size: 1.8em;
+	line-height: 3em;
 	font-family: Verdana, Arial, sans-serif;
 	color: #000000;
 }
 td{
 	border: 1px solid #ffffff;
-	padding: 6px 6px 6px 6px;  
+	padding: 10px 10px 10px 10px;  
 }
 dl{
     margin-bottom: 0.8em;
@@ -244,7 +249,7 @@ dd {
     font-size: 5em;
     margin-left: 0em;
     text-align: center;
-    font-family: 'Varela', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
 }
 .contactinfo{
@@ -258,37 +263,80 @@ dd {
     width: 100%;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
+    background-color: #84b9ba;
 }
-
-#contactform.contentsection{
-    width: 100%;
+.contactformsection{
+    width: 95%;
+    border: 1px solid #ffffff;
+    padding: 1.6em;
 }
 .formheadlines{
     margin-top: 0.8em;
     font-size: 2.5em;
 }
-input{
+.textfields{
     padding-top: 0.8em;
     margin-top: 0.8em;
+    height: 5em;
+    width: 60%;
     border: 0.2em solid  #168689;
     border-radius: 0.4em;
+    clear: both;
 }
-label{
-    font-size: 1em;
-    font-family: 'Varela', sans-serif;
+
+/*For Webkit browsers (Chrome, Safari) */
+
+.textfields:-webkit-input-placeholder {
+   color: #000000;
+   font-size: 1.8em;
+   font-family: arial;
+}
+
+/* For Mozilla Firefox */
+
+.textfields:-moz-placeholder {
+   color: #000000;
+   font-size: 1.8em;
+   font-family: arial;
+}
+.radio{
+	height: 3em;
+	width: 10%;
+	clear: both;
+}
+.radiotext{
+	font-size: 2.5em;
+	font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
     color: #ffffff;
+    width: 70%;
+    clear: both;
 }
+.contactdropdown{
+	height: 5em;
+	width: 60%;
+}
+option{
+	height: 5em;
+}
+
 textarea{
     border: 0.3em solid  #168689;
     border-radius: 0.4em;
+    width: 60%;
+    height: 10em;
+}
+.sendbutton{
+	width: 20%;
+	height: 5em;
 }
 .education{
     width: 100%;
     height: auto;
     margin-top: 1.6em;
     margin-left: 0%;
-    background-color: #168689;
+    background-color: #84b9ba;
+    border: 1px solid #ffffff;
 }
 .workexperience{
     width: 100%;
@@ -296,7 +344,8 @@ textarea{
     margin-top: 1.6em;
     margin-bottom: 3.2em;
     margin-left: 0%;
-    background-color: #168689;
+    background-color: #84b9ba;
+    border: 1px solid #ffffff;
 }
 
 #pagebottom{
