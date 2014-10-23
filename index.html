@@ -6,8 +6,9 @@
         <title>Blogg</title>
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
         <link rel ="stylesheet" href="css/print.css" type="text/css" media="print">
-        <link rel ="stylesheet" href="css/mobile.css" type="text/css" media="screen (and max-device-width: 481px)">
-        <link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+        <link rel ="stylesheet" href="css/mobile.css" type="text/css" media="screen and (max-width: 481px)">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <link href='//fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="iconfilename-precomposed.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="iconfilename-precomposed.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="iconfilename-precomposed.png" />
@@ -20,14 +21,15 @@
                <h1 class="pageheadline">Johanna´s</h1>
            </header>
            
-           <aside>
-               <nav>
-                    <ul class="navigation, noprint">
-                        <li class="active"><a href="index.html">blogg</a></li>
-                        <li><a href="Pages/presentation.html">presentation</a></li>
-                        <li><a href="Pages/laborations.html">laborationer</a></li>
-                        <li><a href="Pages/contact.html">kontakt</a></li>
-                    </ul>
+           
+           <aside class=sidebar>
+           <nav>
+                <ul class="navigation, noprint">
+                    <li class="active"><a href="index.html">blogg</a></li>
+                    <li><a href="Pages/presentation.html">presentation</a></li>
+                    <li><a href="Pages/laborations.html">laborationer</a></li>
+                    <li><a href="Pages/contact.html">kontakt</a></li>
+                </ul>
                </nav>
                <menu class="sidebarsection">
                    <ul class="sidebarlist noprint">
@@ -65,7 +67,7 @@
                 <article class="contentarticle" id="thirdpost">
                     <h1 class="contentheadline">videotaggen i HTML5</h1>
                     <p class="contentparagraph">En vänlig själ som skapat testvideos i olika format som vi webbutvecklare kan testa med.</p>
-                    <video controls>
+                    <video width="90%" ontrols>
                         <source class="left" src="Videos/small.webm" type=video/webm />
                         <source class="left" src="Videos/small.ogv" type=video/ogg />
                     </video>

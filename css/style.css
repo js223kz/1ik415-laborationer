@@ -69,17 +69,16 @@ p{
     margin-right: auto;
     margin-top: 0.8em;
     background-color: #84b9ba;
-    display: block;
-    
+    position: relative;
 }
 header{
     width:78em;
     height:9em;
-    margin-left: 0.8em;
-    margin-right: 0.8em;
+    left: 0.8em;
+    right: 0.8em;
     top: 0.8em;
-    position: absolute;
     background: url(pics/girland.png) left no-repeat;
+    background-size: 65%;
 }
 .pageheadline{
     font-family: 'Raleway', sans-serif;
