@@ -6,7 +6,8 @@
         <title>Laborationer</title>
         <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen"/>
         <link rel ="stylesheet" href="../css/print.css" type="text/css" media="print">
-        <link rel ="stylesheet" href="../css/mobile.css" type="text/css" media="screen (and max-device-width: 480px)">
+        <link rel ="stylesheet" href="../css/mobile.css" type="text/css" media="screen and (max-width: 481px)">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;/>        
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="iconfilename-precomposed.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="iconfilename-precomposed.png" />
@@ -18,35 +19,35 @@
            <header>
            <h1 class="pageheadline">Laborationer</h1>
            </header>
+           <nav>
+                <ul class="navigation noprint">
+                    <li><a id="homesprite" href="../index.html">blogg</a></li>
+                    <li><a id="presentationsprite" href="presentation.html">presentation</a></li>
+                    <li class="active"><a id="laborationsprite" href="laborations.html">laborationer</a></li>
+                    <li><a id="contactsprite" href="contact.html">kontakt</a></li>
+                </ul>
+           </nav>
            <aside>
-               <nav>
-                    <ul class="navigation noprint">
-                        <li><a id="homesprite" href="../index.html">blogg</a></li>
-                        <li><a id="presentationsprite" href="presentation.html">presentation</a></li>
-                        <li class="active"><a id="laborationsprite" href="laborations.html">laborationer</a></li>
-                        <li><a id="contactsprite" href="contact.html">kontakt</a></li>
-                    </ul>
-               </nav>
                <menu class="sidebarsection">
+                   <h1 class="sidebarheadline">webbtekninsk intro</h1>
                     <ul class="sidebarlist noprint">
-                        <h1 class="sidebarheadline">webbtekninsk intro</h1>
                         <li class="sidebarlistitem"><a class="sidebarlink" href="#laboration1">Lab 1 - Struktur och innehåll</a></li>
                         <li class="sidebarlistitem"><a class="sidebarlink" href="#">Lab 2</a></li>
                         <li class="sidebarlistitem"><a class="sidebarlink" href="#">Lab 3</a></li>
                         <li class="sidebarlistitem"><a class="sidebarlink" href="#">Lab 4</a></li>
                         <li class="sidebarlistitem"><a class="sidebarlink" href="#">Lab 5</a></li>
                     </ul>
+                    <h1 class="sidebarheadline">Laboration 1</h1>
                     <ul class="sidebarlist noprint">
-                        <h1 class="sidebarheadline">Laboration 1</h1>
-                            <li class="sidebarlistitem">Utvecklingsmiljön</li>
-                            <li class="sidebarlistitem">Ett första dokument - presentation</li>
-                            <li class="sidebarlistitem">Startsidan - Blogg</li>
-                            <li class="sidebarlistitem"><a class="sidebarlink" href="#assignment4">Absoluta/Relativa sökvägar</a></li>
-                            <li class="sidebarlistitem">Länkar och listor - externa länkar</li>
-                            <li class="sidebarlistitem"><a class="sidebarlink" href="#assignment6">Bilder</a></li>
-                            <li class="sidebarlistitem"><a class="sidebarlink" href="#assignment7">Video</a></li>
-                            <li class="sidebarlistitem">Tabeller</li>
-                            <li class="sidebarlistitem">Kontakt - Formulär</li>
+                        <li class="sidebarlistitem">Utvecklingsmiljön</li>
+                        <li class="sidebarlistitem">Ett första dokument - presentation</li>
+                        <li class="sidebarlistitem">Startsidan - Blogg</li>
+                        <li class="sidebarlistitem"><a class="sidebarlink" href="#assignment4">Absoluta/Relativa sökvägar</a></li>
+                        <li class="sidebarlistitem">Länkar och listor - externa länkar</li>
+                        <li class="sidebarlistitem"><a class="sidebarlink" href="#assignment6">Bilder</a></li>
+                        <li class="sidebarlistitem"><a class="sidebarlink" href="#assignment7">Video</a></li>
+                        <li class="sidebarlistitem">Tabeller</li>
+                        <li class="sidebarlistitem">Kontakt - Formulär</li>
                     </ul>
                </menu>
                <section class="gradetable">
@@ -176,46 +177,50 @@
                             </tr>
                             <tr>
                                 <th>Lab4</th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
                             </tr>
                             <tr>
                                 <th>Lab5</th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
                             </tr>
                         </tbody>
                     </table>  
                 </section>
            </aside>
+           
            <main>
-              <section class="contentsection">
+              <section class="contentsection" id="laborations">
                 <article class="contentarticle">
                     <h1 class="contentheadline">uppgift 1.4 - frågor och svar</h1>
-                    <dl>
-                        <dt>1.4.1 Vilken är den absoluta sökvägen till filen bottom.html?</dt>
-                        <dd>Svar: http://server.se/html/pages/bottom.html</dd>
-                        <dt>1.4.2 Vilken är den relativa sökvägen från filen default.html till filen top.html?</dt>
-                        <dd>Svar: pages/top.html</dd>
-                        <dt>1.4.3 Vilken är den relativa sökvägen från filen bottom.html till filen index.html?</dt>
-                        <dd>Svar: ../../index.html eller /index.html</dd>
-                        <dt>1.4.4 Vilken är den absoluta sökvägen till filen index.html?</dt>
-                        <dd>Svar: http://www.server.se/index.html eller http://www.server.se</dd>
-                        <dt>1.4.5 Vilken är den relativa sökvägen från filen top.html till bottom.html?</dt>
-                        <dd>Svar: bottom.html</dd>
-                        <dt>1.4.6 Vilken är den relativa sökvägen från filen index.html till top.html</dt>
-                        <dd>Svar: html/pages/top.html</dd>
-                    </dl>
+                    <p>1.4.1 Vilken är den absoluta sökvägen till filen bottom.html?</p>
+                    <p>Svar: http://server.se/html/pages/bottom.html</p>
+                    <p>1.4.2 Vilken är den relativa sökvägen från filen default.html till filen top.html?</p>
+                    <p>Svar: pages/top.html</p>
+                    <p>1.4.3 Vilken är den relativa sökvägen från filen bottom.html till filen index.html?</p>
+                    <p>Svar: ../../index.html eller /index.html</p>
+                    <p>1.4.4 Vilken är den absoluta sökvägen till filen index.html?</p>
+                    <p>Svar: http://www.server.se/index.html eller http://www.server.se</p>                        <p>1.4.5 Vilken är den relativa sökvägen från filen top.html till bottom.html?</p>
+                    <p>Svar: bottom.html</p>
+                    <p>1.4.6 Vilken är den relativa sökvägen från filen index.html till top.html</p>
+                    <p>Svar: html/pages/top.html</p>
                 </article>
-                <article class="contentarticle noprint">
+                <article class="contentarticle">
                     <h1 class="contentheadline">uppgift 1.6 - bilder</h1>
                     <p class="contentparagraph"><a class="contentlink" href="../index.html#smileyface" title="Se blogginlägg med bild i svg-format">svg</a></p>
                     <p class="contentparagraph"><a class="contentlink" href="presentation.html#imagejohanna" title="Se jpg-bild på Johanna">jpg</a></p>
                     <p class="contentparagraph"><a class="contentlink" href="../css/pics/girland.png" title="Se headerbild i png-format">png</a></p>
                 </article>
 
-                <article class="contentarticle noprint">
+                <article class="contentarticle">
                     <h1 class="contentheadline">uppgift 1.7 - video</h1>
                     <p class="contentparagraph"><a class="contentlink" href="../index.html#thirdpost" title="Se blogginlägg med video">video</a></p>
                 </article>
                     
-                <article class="contentarticle noprint">
+                <article class="contentarticle">
                     <h1 class="contentheadline">uppgift 3.4 - copycat</h1>
                     <p class="contentparagraph"><a class="contentlink externallink" href="https://uppgift-3-3-c9-js223kz.c9.io/index.html" title="Se mitt resultat som Copycat">Resultat Copycat</a></p>
                 </article>

@@ -75,6 +75,7 @@ header{
     height: 9em;
     max-width: 100%;
     background: url(pics/girland.png) left no-repeat;
+    border: 1px solid #000;
 }
 .pageheadline{
     font-family: 'Raleway', sans-serif;
@@ -91,6 +92,7 @@ nav{
     position: relative;
     margin-top: 9em;
     margin-left: 0.5em;
+    border: 1px solid #000000;
 }
 nav ul{
     width: 40%;
@@ -127,13 +129,14 @@ aside{
     height: auto;
     position: relative;
     clear:both;
-    left: 3em;
+    margin-left: 0.5em;
+    border: 1px solid #000000;
 }
-
 .sidebarsection{
     background-color: #168689;
     width: 60%;
     height: 100%;
+    margin-left: 2.5em;
 }
 .sidebarlist{
     padding-bottom: 0.8em;
@@ -162,7 +165,6 @@ aside{
 .sidebarlink:visited {color: #ffffff; text-decoration: underline;}
 .sidebarlink:hover {color: #8ce9ec; text-decoration: underline;}
 
-
 .contentsection{
     width: 60%;
     min-height: 700px;
@@ -170,7 +172,7 @@ aside{
     margin-left: 35%;
     position: relative;
     margin-top: -24em;
-
+    border:1px solid #000000;
 }
 .contentarticle{
 	width: 100%;
@@ -226,24 +228,22 @@ aside{
 
 /*laboration page*/
 .gradetable{
-    width: 80%;
-    margin-bottom: 2em;
-    margin-left: 1.6em;
+    margin-left: 2.5em;
 }
-#gradetableheader.gradetable{
+.gradetable h1{
     font-size: 1.5em;
+    margin-left: 0em;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
     font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
-    margin-left: 0em;
-    margin-bottom: 0em;
-    margin-top: 1.6em;
 }
 table {
-	margin-top: 20px;
+	margin-top: 0em;
 }
 thead tr th{
+    padding: 6px 6px 6px 6px;
 	border: 1px solid #ffffff;
-	padding: 6px 6px 6px 6px;  
 }
 tfoot tr th{
 	border: 1px solid #ffffff;
@@ -275,6 +275,9 @@ dd {
 	font-size: 0.9em;
 	line-height: 1.4em;
 }
+#contactsidebarsection{
+    width: 80%;
+}
 .contactheadline{
     font-size: 1.5em;
     margin-left: 0em;
@@ -283,6 +286,7 @@ dd {
     font-variant: small-caps;
 }
 .contactinfo{
+    font-size: 1em;
     text-align: center;
     margin-bottom: 0.8em;
     margin-top: 0.8em;
@@ -294,9 +298,6 @@ dd {
     padding-bottom: 0.8em;
 }
 
-#contactform.contentsection{
-    width: 100%;
-}
 .formheadlines{
     margin-top: 0.8em;
 }
