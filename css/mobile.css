@@ -77,8 +77,8 @@ header{
 }
 .pageheadline{
     font-size: 3em;
-    position:absolute;
-    right: 1em;
+    position:relative;
+    left: 1em;
     top: 2em;
 }
 aside{
@@ -139,13 +139,15 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 .sidebarheadline{
     font-size: 1.5em;
     margin-left: 0.4em;
+    margin-bottom: 0.5em;
     font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
 }
 .sidebarlistitem{
     font-size: 0.7em;
     line-height: 1.4em;
-    margin-left: 1.6em;
+    margin-left: 0.8em;
+    margin-bottom: 0.2em;
 	font-family: 'Varela', sans-serif;
 	color: #ffffff;
 }
@@ -315,16 +317,18 @@ textarea{
     border-radius: 0.4em;
 }
 .education{
-    width: 47%;
+    width: 100%;
+    margin-bottom: 1em;
     height: auto;
     float: left;
     background-color: #168689;
 }
 .workexperience{
-    width: 47%;
+    width: 100%;
+    margin-left: 0em;
+    margin-bottom: 1em;
     height: auto;
     float: left;
-    margin-left: 6%;
     background-color: #168689;
 }
 #pagebottom{
