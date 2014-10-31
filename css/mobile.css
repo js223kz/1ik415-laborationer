@@ -70,36 +70,35 @@ p{
     background-color: #84b9ba;
 }
 header{
-    width:100%;
-    height:9em;
-    left: 0.8em;
-    right: 0.8em;
-    top: 0.8em;
+    height: 9em;
+    max-width: 100%;
     background: url(pics/girland.png) left no-repeat;
-    background-size: 65%;
+    background-size: 100%;
 }
 .pageheadline{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 5em;
+    font-size: 3em;
     position:absolute;
-    top: 1em;
-    right: 2em;
+    right: 1em;
+    top: 2em;
 }
 aside{
-    width:100%;
+    width:90%;
     height: auto;
-    float:left;
-    margin-top: 12em;
-    margin-bottom: 2em;
-    margin-left: 0em;
+    position: relative;
+    clear:both;
+    left: 5%;
+    top: -2em;
+}
+
+nav{
+    width: 90%;
+    position: relative;
+    margin-top: 9em;
 }
 nav ul{
-    
-    width: 60%;
-    margin-bottom: 2em;
+    margin-top: -7em;
     margin-left: 5%;
+    width: 50%;
     
 }
 nav li{
@@ -129,8 +128,7 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 
 .sidebarsection{
     background-color: #168689;
-    margin-left: 5%;
-    width:90%;
+    width:100%;
     height: 100%;
 }
 .sidebarlist{
@@ -160,15 +158,16 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 .sidebarlink:visited {color: #ffffff; text-decoration: underline;}
 .sidebarlink:hover {color: #8ce9ec; text-decoration: underline;}
 
-
 .contentsection{
     width: 90%;
     min-height: 700px;
-    margin-top: 0em;
     margin-bottom: 2em;
     margin-left: 5%;
-    float:left;
+    position: relative;
+    margin-top: -1em;
+
 }
+
 .contentarticle{
 	width: 100%;
 	height: auto;

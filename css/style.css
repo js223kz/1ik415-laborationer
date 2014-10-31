@@ -65,20 +65,16 @@ p{
 }
 #wrapper{
     width: 80em;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.8em;
     background-color: #84b9ba;
-    position: relative;
 }
 header{
-    width:78em;
-    height:9em;
-    left: 0.8em;
-    right: 0.8em;
-    top: 0.8em;
+    height: 9em;
+    max-width: 100%;
     background: url(pics/girland.png) left no-repeat;
-    background-size: 65%;
 }
 .pageheadline{
     font-family: 'Raleway', sans-serif;
@@ -86,22 +82,20 @@ header{
     font-style: normal;
     font-size: 5em;
     position:absolute;
+    right: 5em;
     top: 1em;
-    right: 2em;
 }
-aside{
-    width:30%;
-    height: auto;
-    float:left;
-    margin-top: 12em;
-    margin-bottom: 2em;
-    margin-left: 1.6em;
+
+nav{
+    width: 30%;
+    position: relative;
+    margin-top: 9em;
+    margin-left: 0.5em;
 }
 nav ul{
-    width: 60%;
+    width: 40%;
     margin-bottom: 2em;
-    margin-left: 1.6em;
-    
+    margin-left: 2.5em;
 }
 nav li{
     height: 2.5em;
@@ -120,8 +114,7 @@ nav a{
 	font-variant: small-caps;
 	color: #ffffff;
 	left: 2.5em;
-	
-	padding-left: 2em;
+    padding-left: 2em;
 }
 nav a:link {text-decoration: none; }
 nav a:visited {color: #ffffff; text-decoration: none; }
@@ -129,10 +122,16 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 .active{
     color: #168689;
 }
+aside{
+    width:30%;
+    height: auto;
+    position: relative;
+    clear:both;
+    left: 3em;
+}
 
 .sidebarsection{
     background-color: #168689;
-    margin-left: 1.6em;
     width: 60%;
     height: 100%;
 }
@@ -167,9 +166,11 @@ nav a:visited {color: #ffffff; text-decoration: none; }
 .contentsection{
     width: 60%;
     min-height: 700px;
-    margin-top: 12em;
     margin-bottom: 2em;
-    float:left;
+    margin-left: 35%;
+    position: relative;
+    margin-top: -24em;
+
 }
 .contentarticle{
 	width: 100%;
