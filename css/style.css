@@ -75,7 +75,6 @@ header{
     height: 9em;
     max-width: 100%;
     background: url(pics/girland.png) left no-repeat;
-    border: 1px solid #000;
 }
 .pageheadline{
     font-family: 'Raleway', sans-serif;
@@ -92,7 +91,6 @@ nav{
     position: relative;
     margin-top: 9em;
     margin-left: 0.5em;
-    border: 1px solid #000000;
 }
 nav ul{
     width: 40%;
@@ -130,7 +128,6 @@ aside{
     position: relative;
     clear:both;
     margin-left: 0.5em;
-    border: 1px solid #000000;
 }
 .sidebarsection{
     background-color: #168689;
@@ -172,7 +169,6 @@ aside{
     margin-left: 35%;
     position: relative;
     margin-top: -24em;
-    border:1px solid #000000;
 }
 .contentarticle{
 	width: 100%;
@@ -218,6 +214,36 @@ aside{
 #copycat.right{
     max-width: 200px;
     float: left;
+}
+
+.commentsection{
+    width: 100%;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+    margin-left: 0em;
+    border-top: 0.1em dotted #168689;
+    border-bottom: 0.1em dotted #168689;
+}
+.commentheadline{
+    font-size: 2em;
+	font-family: 'Raleway', sans-serif;
+	font-variant: small-caps;
+	color: #000000;
+}
+.commentpost{
+    font-size: 0.8em;
+	font-family: Verdana, Arial, sans-serif;
+	font-style: italic;
+}
+.comment{
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+.commentauthor{
+	font-size: 0.7em;
+	font-family: Verdana, Arial, sans-serif;
+	font-style: italic;
+	margin-bottom: 0.8em;
 }
 #pagebottom{
     width: 100%;
