@@ -301,26 +301,23 @@ dd {
 	font-size: 0.9em;
 	line-height: 1.4em;
 }
+
 #contactsidebarsection{
-    width: 100%;
-}
-.contactheadline{
-    font-size: 1.5em;
-    margin-left: 0em;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-variant: small-caps;
-}
-.contactinfo{
-    text-align: center;
-    margin-bottom: 0.8em;
-    margin-top: 0.8em;
+    width: 80%;
 }
 #contactinfosection{
     height: auto;
     width: 100%;
+}
+#hcard-Johanna-Szepanski{
+    font-size: 1em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
+    line-height: 1.4em;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-variant: small-caps;
+    color: #fff;
 }
 
 #contactform.contentsection{
