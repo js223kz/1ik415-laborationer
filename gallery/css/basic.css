@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color: #cccccc;
+    background-color: #fff8f9;;
 
 }
 ol, ul {
@@ -52,7 +52,7 @@ table {
 #wrapper{
     width: 100%;
     height: auto;
-    background-color: #fff8f9;
+    
 }
 #headline{
     width: 100%;
@@ -69,22 +69,125 @@ table {
    margin-left: auto;
    margin-right: auto;
    margin-top: 10%;
+
 }
-img{
-    max-width: 15%;
-    position: relative;
+a {
+    width: 200px;
+    padding: 10px 10px 25px;
+    background-color: #ffffff;
+    float: left;
+    margin: 0 15px 30px;
+    border: 1px solid #BFBFBF;
+	-webkit-box-shadow: 3px 3px 4px rgba(135, 139, 144, 0.4);
+	-moz-box-shadow: 3px 3px 4px rgba(135, 139, 144, 0.4);
+	box-shadow: 3px 3px 4px rgba(135, 139, 144, 0.4);
+	z-index:0;
+    position:relative;
+    text-decoration: none;
 }
-.polaroid {
-	width: auto;
-	position: relative;
-    padding: 20px 10px 80px 10px;
-	border: 1px solid #BFBFBF;
-	background-color: #ffffff;
-	-webkit-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
-	-moz-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
-	box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
-}
-.polaroid[title] img:before{
+a:after{
     font-family: 'Gloria Hallelujah', serif;
-    font-size: 3em;
+    color: #000;
+    font-size: 0.7em;
+    content: attr(title);
+    position: relative;
+    top: 15px;
+    
+}
+a img{
+    display: block; 
+	width: inherit;
+}
+a:nth-child(1){
+    position: relative;
+    left: 30px;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+a:nth-child(2){
+    position: relative;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+a:nth-child(3){
+    position: relative;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+a:nth-child(4){
+    position: relative;
+    left: -30px;
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+a:nth-child(5){
+    position: relative;
+    top: -30px;
+    left: -30px;
+    -webkit-transform: rotate(none);
+    -moz-transform: rotate(none);
+    transform: rotate(none);
+}
+a:nth-child(6){
+    position: relative;
+    top: -250px;
+    left: 30px;
+    -webkit-transform: rotate(none);
+    -moz-transform: rotate(none);
+    transform: rotate(none);
+}
+a:nth-child(7){
+    position: relative;
+    top: -150px;
+    left: -60px;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+a:nth-child(8){
+    position: relative;
+    top: -250px;
+    left: -60px;
+    -webkit-transform: rotate(none);
+    -moz-transform: rotate(none);
+    transform: rotate(none);
+}
+a:nth-child(9){
+    position: relative;
+    top: -80px;
+    left: -80px;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+a:nth-child(10){
+    position: relative;
+    font-size: 1.3em;
+    top: -200px;
+    left: -400px;
+    -webkit-transform: rotate(none);
+    -moz-transform: rotate(none);
+    transform: rotate(none);
+}
+a:nth-child(11){
+    position: relative;
+    font-size: 1.3em;
+    top: -500px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+a:hover {
+  -webkit-transform: scale(1.50);
+  -moz-transform: scale(1.50);
+  position: relative;
+  z-index: 1;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.5);
+        box-shadow: 0 10px 20px rgba(0,0,0,.5);
 }
