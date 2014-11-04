@@ -107,6 +107,7 @@ a:nth-child(1){
 }
 a:nth-child(2){
     position: relative;
+    font-size: 1.3em;
     -webkit-transform: rotate(4deg);
     -moz-transform: rotate(4deg);
     transform: rotate(4deg);
@@ -119,6 +120,7 @@ a:nth-child(3){
 }
 a:nth-child(4){
     position: relative;
+    font-size: 1.3em;
     left: -30px;
     -webkit-transform: rotate(-15deg);
     -moz-transform: rotate(-15deg);
@@ -158,6 +160,7 @@ a:nth-child(8){
 }
 a:nth-child(9){
     position: relative;
+    font-size: 1.3em;
     top: -80px;
     left: -80px;
     -webkit-transform: rotate(6deg);
